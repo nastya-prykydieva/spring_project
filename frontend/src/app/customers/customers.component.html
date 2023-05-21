@@ -1,0 +1,16 @@
+<div>
+  <ngx-datatable
+    class="dark"
+    [rows]="rows"
+    [columns]="columns"
+    [columnMode]="'standard'"
+    [headerHeight]="50"
+    [footerHeight]="50"
+    [rowHeight]="'auto'"
+    [scrollbarH]="true"
+    appScrollTracker
+    [loadingIndicator]="isLoading"
+    (scrolledDown)="getCustomers()"
+  >
+  </ngx-datatable>
+</div>
